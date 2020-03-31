@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "No Cache",
+  "version": "1.0",
+  "description": "Ensure that you see your page without client and server caches",
+  "browser_action": {
+    "default_title": "No Cache!"
+  },
+
+  "icons": {
+    "120": "/images/icon-120.png"
+  },
+
+  "background": {
+    "scripts": [
+      "actions.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*",
+    "storage",
+    "browsingData",
+    "contextMenus"
+  ]
+}
